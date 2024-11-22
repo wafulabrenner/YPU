@@ -42,6 +42,44 @@
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
+<style>
+
+.logos__marquee {
+	display: flex;
+	overflow-x: hidden;
+	user-select: none;
+	mask-image: linear-gradient(
+		to right,
+		hsl(0 0% 0% / 0),
+		hsl(0 0% 0% / 1) 20%,
+		hsl(0 0% 0% / 1) 80%,
+		hsl(0 0% 0% / 0)
+	);
+}
+
+.marquee__logos {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	min-width: 100%;
+	animation: loop 20s linear infinite;
+}
+.marquee__logos img {
+	display: block;
+	margin-inline: 2rem;
+}
+
+@keyframes loop {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+</style>
 
 	</head>
 	<body data-plugin-page-transition>
@@ -168,8 +206,8 @@
 								<div class="overflow-hidden mb-2">
 									<h2 class="text-color-dark font-weight-normal text-6 mb-2"><em class="p-relative z-index-1 fst-normal">Who <span class="appear-animation" data-appear-animation="highlightScribble1"><svg class="highlight-scribble-1" viewBox="0 0 760 60" preserveAspectRatio="none"><path d="M19,49C75.19,30.63,152,21,317.26,17.27c55.43-.41,198.33-2.08,407.85,12.53" stroke="#212529" pathLength="1" stroke-width="14" fill="none"></path></svg></span></em><strong class="font-weight-extra-bold">We Are</strong></h2>
 								</div>
-								<p data-plugin-animated-letters data-plugin-options="{'startDelay': 500, 'minWindowWidth': 0, 'animationName': 'typeWriter', 'animationSpeed': 50}">We are a dynamic and youth-led organization committed to fostering positive change in the lives of young individuals. Our organization is rooted in the belief that empowered youth can transform communities and contribute to the development of a thriving, inclusive society. At Youth Plus Elite Club, we are dedicated to meeting the multi-faceted needs of young people, through a youth-led model to foster their social and economic development.<br>
-									Sexual and Reproductive Health and Rights for young people are at the heart of our work as we stride to empower young people between 10 to 35 years to improve their sexual and reproductive health as well as their socio-economic situation. With our rich portfolio of activities tailored to empower young people to enjoy the fundamental right to make informed choices regarding their sexual reproductive wellbeing and also influence various stakeholders in this direction, we facilitate the achievement of broader development goals. </p>
+								<p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">We are a dynamic and youth-led organization committed to fostering positive change in the lives of young individuals. Our organization is rooted in the belief that empowered youth can transform communities and contribute to the development of a thriving, inclusive society. At Youth Plus Elite Club, we are dedicated to meeting the multi-faceted needs of young people, through a youth-led model to foster their social and economic development.</p>
+								<p class="mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600"><em class="p-relative z-index-1 fst-normal">Sexual and Reproductive Health(SRH)<span class="appear-animation" data-appear-animation="highlightScribble1"><svg class="highlight-scribble-1" viewBox="0 0 760 60" preserveAspectRatio="none"><path d="M5.29,45c58.45-36.43,84.27-39.17,96-31.55s5.8,23.19,18,28.92C141.93,53,179,7.19,208.29,17.83c15.37,5.59,11.78,20.65,27,24.54,24.36,6.23,46.68-29,69-21.91,13.54,4.29,11.14,19.09,24,21.91,18.79,4.12,32.62-25.58,56-24.54,17,.76,16.64,21.9,34,24.54,21.69,3.31,34.42-25.43,57-21.91,15.25,2.38,15.08,16.37,30,18.41,22.32,3.05,34.49-26.64,56-23.66,16.75,2.31,17.76,21.47,34,22.78,17.87,1.44,25.48-21.06,45-21.91,9.48-.41,22.55,4.24,39,25.41" stroke="#0088cc" pathLength="1" stroke-width="14" fill="none"></path></svg></span></em> and Rights for young people are at the heart of our work as we stride to empower young people between 10 to 35 years to improve their sexual and reproductive health as well as their socio-economic situation. With our rich portfolio of activities tailored to empower young people to enjoy the fundamental right to make informed choices regarding their sexual reproductive wellbeing and also influence various stakeholders in this direction, we facilitate the achievement of broader development goals.</p>
 								
 							</div>
 						</div>
@@ -365,7 +403,7 @@
 										<a >
 											<img src="img/team/blank.png" class="img-fluid border-radius-0" alt="">
 											<span class="thumb-info-title">
-												<span class="thumb-info-inner">Nabbosa Mary</span>
+												<span class="thumb-info-inner">Tamale Edward Gonzaga</span>
 												<span class="thumb-info-type">Treasurer</span>
 											</span>
 										</a>
@@ -391,36 +429,9 @@
 					</div>
 				</section>
 
-				<div class="container">
-					<div class="row py-5 my-5">
-						<div class="col">
-
-							<div class="owl-carousel owl-theme mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/01.png" alt="">
-								</div>
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/02.png" alt="">
-								</div>
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/03.png" alt="">
-								</div>
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/04.png" alt="">
-								</div>
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/05.png" alt="">
-								</div>
-								<div>
-									<img class="img-fluid opacity-2" src="img/logos/06.png" alt="">
-								</div>
-								
-							</div>
-
-						</div>
-					</div>
+				<div class="logos__marquee" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+					<div class="marquee__logos"><img src="img/logos/01.png" width="75" height="auto" loading="eager" alt="MOH" class="intro-logos_logo"><img src="img/logos/02.png" width="75" height="auto" loading="eager" alt="KCCA" class="intro-logos_logo"><img src="img/logos/03.png" width="75" height="auto" loading="eager" alt="" class="intro-logos_logo"><img src="img/logos/04.png" width="75" height="auto" loading="lazy" alt="" class="intro-logos_logo"><img src="img/logos/05.png" width="75" height="auto" loading="eager" alt="" class="intro-logos_logo"><img src="img/logos/06.png" width="75" height="auto" loading="eager" alt="PWC" class="intro-logos_logo cc-pwc"><img src="img/logos/01.png" width="75" height="auto" loading="lazy" alt="" class="intro-logos_logo"><img src="img/logos/02.png" width="75" height="auto" loading="eager" alt="Vice" class="intro-logos_logo"><img src="img/logos/03.png" width="75" height="auto" loading="eager" alt="Vice" class="intro-logos_logo"></div>
 				</div>
-
 			</div>
 
 			<footer id="footer" class="mt-0">
@@ -468,6 +479,7 @@
 			</footer>
 		</div>
 
+		
 		<!-- Vendor -->
 		<script src="vendor/plugins/js/plugins.min.js"></script>
 
@@ -479,6 +491,8 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+		<script src="https://static.elfsight.com/platform/platform.js" async></script>
 
 	</body>
 </html>
